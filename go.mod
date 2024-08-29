@@ -1,3 +1,3 @@
-module golang-apiclient
+module github.com/jarvis0p/jsmon-cli
 
-go 1.23
+go 1.22.6
