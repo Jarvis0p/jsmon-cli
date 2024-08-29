@@ -1,4 +1,4 @@
-package main
+package utils
 
 import (
 	"bytes"
@@ -10,7 +10,7 @@ import (
 )
 
 // Function to get domain URLs
-func getDomainUrls(domains []string) {
+func GetDomainUrls(domains []string) {
 	endpoint := fmt.Sprintf("%s/getDomainsUrls", apiBaseURL)
 	requestBody, err := json.Marshal(map[string]interface{}{
 		"domains": domains,

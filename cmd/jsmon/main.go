@@ -147,7 +147,7 @@ func main() {
 		for i, domain := range domains {
 			domains[i] = strings.TrimSpace(domain)
 		}
-		getDomainUrls(domains)
+		utils.GetDomainUrls(domains)
 	case *apiPath != "":
 		domains := strings.Split(*apiPath, ",")
 		for i, domain := range domains {
